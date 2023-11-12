@@ -1,0 +1,10 @@
+version: "1"
+services:
+  api: 
+    image: almirodil/node-express-app-test
+    ports: 
+       - "3000:3000"
+  db:
+    image: almirodil/mongodb-server-test
+    ports:
+       - "27018:27018"
